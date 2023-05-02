@@ -55,6 +55,3 @@ class Comment(db.Model):
     text = db.Column(db.Text)
     post_id = db.Column(db.Integer(), db.ForeignKey("post.id", name="Post"))
     post = db.relationship("Post", back_populates="comments")
-
-    def __str__(self):
-        return ''

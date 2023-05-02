@@ -5,9 +5,9 @@
 {{ post.text|safe }}
 <hr>
 <h3>Комментарии</h3>
-{% for comment in comments %}
+{% for comment in post.comments %}
 <p>{{ comment.guest }}</p>
-<p>{{ comment.text }}</p>
+<p>{{ comment.text|safe }}</p>
 {% endfor %}
 <hr>
 <h3>Введите ваш комментарий</h3>
