@@ -9,5 +9,5 @@ class LoginForm(FlaskForm):
     password = PasswordField("Пароль", validators=[DataRequired()])
 
 class CommentForm(FlaskForm):
-    questname = StringField("Имя", validators=[DataRequired()])
+    guestname = StringField("Имя", validators=[DataRequired()])
     text = TextAreaField("Текст комментария", validators=[DataRequired()])
